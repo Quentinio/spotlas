@@ -18,12 +18,6 @@ class HomeController extends GetxController {
   int initialPage = 0;
   int activeIndex = 0;
 
-  ///Pagination
-
-  final controller = ScrollController();
-
-
-  ///Pagination
 
   void addToLikedList(item) {
     likedList.add(item);
@@ -60,7 +54,6 @@ class HomeController extends GetxController {
   @override
   void onInit() async {
     await fetchEvents();
-    pagination();
     super.onInit();
   }
 
